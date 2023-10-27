@@ -24,7 +24,19 @@ class CategoriesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initView()
         loadData()
+    }
+    
+    func initView() {
+        tableView.register(CategoryCell.nib, forCellReuseIdentifier: CategoryCell.identifier)
+        tableView.allowsSelection = false
+    }
+    
+    // MARK: - Table view delegate
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 160
     }
 
     // MARK: - Table view data source
@@ -35,8 +47,10 @@ class CategoriesViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = categories[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: CategoryCell.identifier, for: indexPath) as! CategoryCell
+        cell.nameLabel.text = categories[indexPath.row].name
+        cell.posterImageView.loadImage(from: categories[indexPath.row].imageUrl)
+      
         return cell
     }
     

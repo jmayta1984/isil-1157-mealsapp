@@ -18,6 +18,7 @@
 		8DE429FF2AEB469700D5C1B8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE429FE2AEB469700D5C1B8 /* Category.swift */; };
 		8DE42A012AEB49C200D5C1B8 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE42A002AEB49C200D5C1B8 /* HttpRequestHelper.swift */; };
 		8DE42A032AEB555B00D5C1B8 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE42A022AEB555B00D5C1B8 /* CategoryService.swift */; };
+		8DE42A062AEB635500D5C1B8 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE42A052AEB635500D5C1B8 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		8DE429FE2AEB469700D5C1B8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		8DE42A002AEB49C200D5C1B8 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
 		8DE42A022AEB555B00D5C1B8 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
+		8DE42A052AEB635500D5C1B8 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		8DE429DE2AEB400500D5C1B8 /* MealsApp */ = {
 			isa = PBXGroup;
 			children = (
+				8DE42A042AEB62FF00D5C1B8 /* Extensions */,
 				8DE429F62AEB40B700D5C1B8 /* Models */,
 				8DE429F52AEB405200D5C1B8 /* Helpers */,
 				8DE429F42AEB404700D5C1B8 /* UI */,
@@ -120,6 +123,14 @@
 				8DE429FC2AEB45C500D5C1B8 /* CategoriesViewController.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		8DE42A042AEB62FF00D5C1B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8DE42A052AEB635500D5C1B8 /* UIImageView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE42A062AEB635500D5C1B8 /* UIImageView.swift in Sources */,
 				8DE429E02AEB400500D5C1B8 /* AppDelegate.swift in Sources */,
 				8DE42A012AEB49C200D5C1B8 /* HttpRequestHelper.swift in Sources */,
 				8DE429FF2AEB469700D5C1B8 /* Category.swift in Sources */,
